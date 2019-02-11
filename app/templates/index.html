@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<img src="https://placehold.it/500x200" alt="Image">
+
+<h3>Hobbies:</h3>
+<ul class="hlist">
+  {% for hobby in hobbies %}
+    <li>{{ hobby }}</li>
+  {% endfor %}
+</ul>
+
+
+{% endblock %}
