@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 
-{% block content %}
+{% block title %}
+  {{ super() }} - {{ title }}
+{% endblock %}
+
+{% block app_content %}
 <img src="https://placehold.it/500x400" alt="Image">
 
 <h3>Description: </h3>
